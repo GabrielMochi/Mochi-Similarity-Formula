@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="736.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="similarity.FXMLDocumentController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView cache="true" cacheHint="SPEED" fitHeight="460.0" fitWidth="736.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/background.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="wordsTextField" focusColor="#2196f3" focusTraversable="false" labelFloat="true" layoutX="97.0" layoutY="24.0" onAction="#handleCalculateButtonAction" prefHeight="31.0" prefWidth="545.0" promptText="Insira as palavras separando-as por vírgula. Ex.: professor, professora." unFocusColor="#2196f3">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton focusTraversable="false" layoutX="265.0" layoutY="392.0" onAction="#handleCalculateButtonAction" prefHeight="41.0" prefWidth="209.0" ripplerFill="WHITE" style="-fx-background-color: #009688;" text="Calcular similaridade" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label fx:id="similarityResultLabel" alignment="CENTER" layoutX="73.0" layoutY="211.0" prefHeight="39.0" prefWidth="592.0" style="-fx-background-color: transparent;" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Calibri Light" size="28.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#e4e4e4" />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="736.0" style="-fx-background-color: #1E88E5;" text="Aplicação da Fórmula da Similaridade de Mochi" textAlignment="CENTER" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Cambria Math" size="22.0" />
+         </font>
+         <padding>
+            <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+         </padding>
+      </Label>
+   </top>
+</BorderPane>
