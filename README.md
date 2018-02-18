@@ -1,8 +1,9 @@
-# Mochi-Similarity-Formula
-## Mochi Similarity Formula Application
+# Mochi Similarity Formula
 
-Author: [(Gabriel Mochi Ribeiro)[https://github.com/GabrielMochi]]
-Reviewer: [(Gabriel Maia)[https://github.com/GabrielBMaia]]
+Author: [Gabriel Mochi Ribeiro](https://github.com/GabrielMochi)  
+Reviewer: [Gabriel Maia](https://github.com/GabrielBMaia)
+
+## About the application
 
 If I tell you to compare the words "teacher," "teacher," and "profession," you will, of course, tell me they are alike, but you will not know what criteria your reasoning used to compare them.
 
